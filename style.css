@@ -1,0 +1,391 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  *{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  
+  /*inicio stilo del header*/
+  header{  
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #8c8c8c;
+    background-color: #FEBD59;
+    height: 10vh;
+    width: 100vw;
+    align-items:center;
+  }
+  header .link-izquierda{
+    display: flex;
+    height:100%;
+    align-items:center;
+  }
+  header .nombre{
+    font-family: 'Dancing Script', cursive;
+    font-size:28px;
+    color:#8C1B1A;
+  }
+  div.links{
+    display: flex;
+    height: 100%;
+  }
+  .link{
+    height: 100%;  
+   }
+  
+  .link a {
+    display: block;
+    padding: 3vh 1vw;  
+    height: 100%;
+    text-decoration: none;
+    color:#8C1B1A;
+  }
+  .link a:hover{
+    background-color: white;
+    color: #8C1B1A;
+    overflow: hidden;
+  }
+  header .link #logo{
+    margin: 0px;
+    padding: 0;
+  }
+
+header .link-izquierda .link img{
+  display: inline-block;
+  height:100%;
+  width: auto;
+  margin: 0px;
+  padding: 0;
+}
+  
+  /*fin stilo del header*/
+  
+  
+  
+  /*stilo del body*/
+  
+  body{
+    background-color: #504e4e;
+  }
+  
+  #idimagenes{
+    display:block;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .fila{
+    display:flex;
+    align-items:center;
+    height:100vh;
+    width: 100vw;
+  
+  }
+  
+  .text{
+    border: 1px solid black;
+    width: 30%;
+    height: 100%;
+    background-color: #ecba74;
+    text-align:justify;
+    padding: 20% 10px;  
+    overflow:auto;     
+  }  
+  
+  .img-related{
+    background-color: white;
+    border: 1px solid black;
+    display:inline-block;
+    width: 70%;
+    height: 100%;
+  }
+  
+  footer{
+    display: flex;
+    height: 10vh;
+    background-color:black;
+    justify-content: space-between;
+    width: 100vw;
+  }
+  /*fin de estilo del body*/
+
+/*INICIO estilo de las card de contacto*/
+.cards {  
+  background-image: url("");
+  background-size:contain;
+  height: 100vh;
+  width: 100vw;
+  display: flex;  
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  align-items: center;
+  overflow-y:auto;
+  background-color: black;
+}
+.card {
+  overflow: hidden;
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background-color: #f7daab;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin: 15px 20px;
+}
+
+.card:hover{
+  box-shadow: 0 5px 15px rgba(3,89,92,0.5);
+  transform: translateY(-15px)
+  
+}
+.card .head{
+  height: 125px;
+  width: 100%;
+  position: relative;
+}
+
+.card .head .circle{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #8C1B1A;
+  bottom:0;
+}
+
+.card .head .img{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+  bottom: -30%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.card .head .img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card .description{
+  height: 200px;
+  padding: 40px 20px 20px 20px;
+  border-bottom: solid 1px rgba(6,74,76,0.18);
+  text-align: center;
+}
+
+.card .description h3{
+  color: #194091
+}
+.card .description h4{
+  color:#316ADE
+}
+.card .description p{
+  margin-top:20px;
+  font-size: 15px;  
+}
+
+.card .contact{
+  width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card .contact a{
+  text-decoration: none;
+  background-color: white;
+  color:black;
+  padding:5px 20px;
+  border-radius: 5px;
+  transition: 0.3s; 
+}
+
+.card .contact a:hover{
+  background-color: #530f0e;
+}
+/*FIN estilo de las card de contacto*/
+
+
+/*INICIO estilo del formulario*/
+  #form{
+    background-color:#FEBD59;
+    width: 100vw;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap:wrap;
+    overflow: hidden;
+    
+  }
+  section .contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }  
+
+  
+  section img{
+    width:100%;
+  }
+      
+  
+  form{
+    padding:auto;
+    display:flexbox;
+    justify-content: center;
+    margin-bottom: 0; 
+    
+    
+  }
+ 
+  .datos{
+    display: flex;
+    flex-direction:column;
+    margin-right:30px;
+    margin-bottom:40px;
+    justify-content: space-between;
+    
+  }
+  .datos> input{
+    display: flex;
+    align-content:center;
+    margin-left:30px;   
+  }
+#btn-form{
+  background-color: white;
+  color: #8C1B1A;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+}
+#btn-form:hover{
+  background-color: #8C1B1A ;
+  color: white;
+}
+
+
+/*FIN estilo del formulario*/
+/*INICIO boton estático*/
+.boton{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 7vh;
+    width:60px;
+    background-color: #c9c9c9;  
+    border-radius: 0.5em;
+  border: 1px solid black;
+   }
+
+
+/*INICIO boton flotante*/
+  #button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     position:fixed;
+     height: 10vh;     
+     padding: 10px 5px;
+     right:40px;
+     bottom:40px;
+     background-color: black;  
+     z-index: 2;
+     border-radius: 1.5em;
+    border: 2px solid #f7a6a6;
+   }
+#button a{
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+#button a:hover{
+  text-decoration: none;
+  color: white;
+}
+  
+  #button:hover{
+    background-color: #f7a6a6;
+    color: white;
+    transition-timing-function:ease;
+    transition-duration:0.5s;    
+  }
+
+
+/*FIN boton floante*/
+
+  
+  /*inicio del estilo del footer*/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #8C1B1A;
+    color: #FEBD59;
+    width: 100vw;
+  overflow: hidden;
+  
+  
+}
+  footer .main-footer{
+    margin: 7px auto;
+    display:flex;    
+    justify-content: center;
+    width: 100%;    
+    height: 100%;
+    text-align: center;
+  }
+
+footer .direccion{  
+  text-align: center;
+  }
+ footer .main-footer .favicon a{
+   margin:10px;  
+ }
+
+footer .main-footer .favicon{  
+  justify-content: end;
+}
+
+footer .bottom-footer{
+  display: flex;
+  justify-content: center;
+}
+
+  /* fin del estilo del footer*/
+   
+
+@media (max-width:550px){
+  #button{
+    display: none;
+  }
+  header .links{
+    display: none;
+  }
+  header {
+    display: flex;
+    justify-content:center;
+  }
+}
+
+#map {
+	width: 100%;
+  display: flex;
+  justify-content:center;
+}
+#map iframe{
+  width: 100%;
+  height:100vh;
+}
+

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Doña Aurora</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/91a32acd3c.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@200;400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+  <body>
+    
+    <header class="fila-header">
+      <div class="link-izquierda">
+        <div class="link" ><a href="#" id="logo"><img src="DONIA_AURORA - Logo.png" alt="logo"></a>
+        </div>
+        <div class="nombre"><strong></strong>Doña Aurora</strong>
+        </div>      
+      </div>
+      
+      <div class="links">
+        <div class="link"><a href="#restaurante"><strong>QUIENES SOMOS</strong></a></div>
+        <div class="link"><a href="#menu"><strong>MENU</strong></a></div>
+        <div class="link"><a href="#cards"><strong>NUESTRO PERSONAL</strong></a></div>
+        <div class="link"><a href="#form"><strong>CONTACTO</strong></a></div>
+      </div>
+      
+    </header>
+        
+    <section>
+      <img id="idimagenes" src="" alt="Fotos del lugar">
+  
+      <script>
+      window.addEventListener('load',function(){  
+         const idimagenes=document.getElementById("idimagenes");
+         const imagenes=["Fuego2.jpg","Vinos.jpg","Carne_Presentación.jpg"];
+         let indice=0;
+         const cambiarImagenes= function(){
+           let ruta='img/'+imagenes[indice];
+           idimagenes.src= ruta;
+           let fin=imagenes.length-1; 
+           if (indice<fin)
+           {
+             indice++;
+            }
+           else{
+             indice=0
+           }
+        }
+       cambiarImagenes();
+       setInterval(cambiarImagenes,3000);
+      });
+    </script>
+
+  </section> 
+ 
+    <div class="fila">
+      <img src="/img/carne_menu.jpg" class="img-related" alt="foto de resto"> 
+      <div class="text" id="restaurante">
+        <h2>El Restaurante</h2></br>
+        <p> Desde el 2005 nuestro local de comidas se enorgullece en traer los platos favoritos de los argentinos para que usted disfrute en un ambiente sofisticado y tranquilo la degustacion de nuestro amplio menu. </p>
+      </div>
+    </div>
+
+    <div class="fila" id="#filaDos">
+      <div class="text" id="menu">
+        <h2>Menu</h2></br>
+        <p>Te esperamos de Martes a Domingos de 20:00 P.M a 01:00 A.M para disfrutar de nuestros exquisitos platos</p>
+        
+      </div>
+      <img src="/img/empanadas_DelNorte.jpg" class="img-related" id="img-related" alt="foto de menu"> 
+    </div>
+
+    
+<!--CARDS-->
+    <div class="cards" id ="cards">
+      <!--CARD MICAELA-->
+      <div class="card">
+        <div class="head">
+          <div class="circle"></div>
+          <div class="img">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=761&q=80" alt="cociner1">
+          </div>
+        </div>
+        <div class="description">
+          <h3>Micaela</h3>
+          <h4>Gerente</h4>
+          <p>La cabeza de un equipo de profesionales, que los une un tema en comun: la gastronomia</p>
+        </div>
+        <div class="contact">
+          <a href="">Contacto</a>
+        </div>
+      </div>
+      
+    <!--CARD HERNAN-->
+      <div class="card">
+        <div class="head">
+          <div class="circle"></div>
+          <div class="img">
+            <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="cociner1">
+          </div>
+        </div>
+        <div class="description">
+          <h3>Hernan</h3>
+          <h4>Chef</h4>
+          <p>El mejor chef en el rubro con mas de 15 años de experincia, combinando comida tradicional con la gourmet</p>
+        </div>
+        <div class="contact">
+          <a href="">Contact</a>
+        </div>
+      </div>
+    <!--CARD PAULA-->
+      <div class="card">
+        <div class="head">
+          <div class="circle"></div>
+          <div class="img">
+            <img src="https://images.unsplash.com/photo-1542596768-5d1d21f1cf98?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="cociner1">
+          </div>
+        </div>
+        <div class="description">
+          <h3>Paula</h3>
+          <h4>Cocinera</h4>
+          <p>Excelente profesional con basta experiencia en la cocina, especialmente la regional</p>
+        </div>
+        <div class="contact">
+          <a href="">Contact</a>
+        </div>
+      </div>
+  
+      <!--CARD JUAN-->
+      <div class="card">
+        <div class="head">
+          <div class="circle"></div>
+          <div class="img">
+            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="cociner1">
+          </div>
+        </div>
+        <div class="description">
+          <h3>Juan</h3>
+          <h4>Diseñador</h4>
+          <p>A cargo del diseño y la administracion de nuestro restaurante</p>
+        </div>
+        <div class="contact">
+          <a href="">Contact</a>
+        </div>
+      </div>
+    </div>
+<!--FIN CARDS-->    
+    
+    
+<div id="map"> 
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d768.4007103544133!2d-64.8604524304386!3d-27.499723508941145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94236e61c1d4dc09%3A0xfb5c8cbf4d50a25e!2sJuan%20Bautista%20Alberdi%20340%2C%20G4220%20Termas%20de%20R%C3%ADo%20Hondo%2C%20Santiago%20del%20Estero!5e1!3m2!1ses!2sar!4v1681830802889!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+    
+      
+<!--FOMULARIO DE CONTACTO-->
+    
+    <section id="form">
+      <div class="logo"><img src="DONIA_AURORA - Logo.png" alt=""></div>
+      <div class="contacto">
+        <form id= "contact">
+          <h1>Reserva con nosotros</h1>
+          <br>
+          <input type="text" name="nombre" id=nombre placeholder="Ingrese su nombre"  maxlength="20"></input>
+          <label id="msjNombre"></label>
+          <br><br>
+          <input type="text" name="apellido" id=apellido placeholder="Ingrese su apellido"  maxlength="20"></input>
+          <label id="msjApellido" class="rojo" >         </label>
+          <br><br>
+          <input type="number" name="Edad" id=edad placeholder="edad"  maxlength="3">             </input>
+          <label id="msjEdad" ></label>
+          <br><br>
+          <input type="text" name="mail" id=mail placeholder="Direcion de mail"></input>
+          <label id="msjMail"></label>
+          <br><br>
+          <textarea name="comentario" placeholder="Comentario
+            " rows="5" cols="50"> </textarea><br><br>
+         
+        </form>
+        <div class="boton">
+         <button type="button" id="btn-form"   value="enviar" onclick="validardatos()">enviar</button>
+        </div>
+        </div>
+    </section>
+    
+<!--FIN FORMULARIO-->
+
+<!--boton flotante-->    
+   <div id="button"><a href="#form">Haga su Reserva</a></div>
+    
+    <!--footer-->
+     
+    <footer>
+      <div class="main-footer">
+        <div class="favicon">
+          <a href=""><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
+          <a href="#"><i class="fa-brands fa-square-instagram" style="color: #ffffff;"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+        </div>
+        <div class="direccion">
+        <strong>Av. Juan Bautista Alberdi 340 - Termas de Rio Hondo</strong>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <h5>copyright 2023 - Doña aurora</h5>
+      </div>
+    </footer> 
+</body>
+
+</html>
